@@ -2,6 +2,9 @@
   --text: #acdfb3;
   --bg: #222;
   --btn-bg: #71f171;
+  --body-line-height: 1.5;
+  --bg-opacity: 1;
+  --text-opacity: 1;
 }
 
 * {
@@ -14,6 +17,7 @@ body {
   color: var(--text);
   background-color: var(--bg);
   font-family: sans-serif;
+  line-height: var(--body-line-height);
 }
 
 #play-text {
@@ -87,4 +91,38 @@ button {
 button:hover {
   cursor: pointer;
   transform: translateY(-2px);
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-x-0 {
+  left: 0;
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-neutral-200 {
+  color: rgb(229 229 229 / var(--text-opacity));
+}
+
+.bg-neutral-700 {
+  background-color: rgb(64 64 64 / var(--bg-opacity));
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
 }
